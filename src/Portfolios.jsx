@@ -1,11 +1,32 @@
 import React from 'react'
 import face from '../src/assets/face.png'
+import healthy from '../src/assets/healthy.png'
+import weather from '../src/assets/weather.png'
+import crypto from '../src/assets/crypto.png'
 import virtualp from '../src/assets/virtualp.jpg'
 import memories from '../src/assets/memories.jpeg'
 
 const Portfolio = () => {
 
     const portfolios = [
+        {
+            id: 1,
+            src: healthy,
+            demo: 'https://healthybitess.netlify.app/',
+            code: 'https://github.com/mayankgautam6542/Food-Delivery'
+        },
+        {
+            id: 2,
+            src: crypto,
+            demo: 'https://cyptobucks.netlify.app/',
+            code: 'https://github.com/mayankgautam6542/CryptoBucks'
+        },
+        {
+            id: 3,
+            src: weather,
+            demo: 'https://weatherpredicts.netlify.app/',
+            code: 'https://github.com/mayankgautam6542/WeatherWise'
+        },
         {
             id: 1,
             src: face,
@@ -27,7 +48,7 @@ const Portfolio = () => {
     ]
 
   return (
-    <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen pt-60 pb-80'>
+    <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen pt-80 pb-60'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-cyan-500 p-1'>Portfolio</p>
